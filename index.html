@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>filter Products</h1>
+    <select id="rating-filter">
+        <option value="all">All</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="jewelery">jewelery</option>
+        <option value="men's clothing">men's clothing</option>
+        <option value="women's clothing">women's clothing</option>
+      </select>
+      <select id="sort-view" onchange="sortinp()">
+        <option value="none">none</option>
+        <option value="increasing">increasing</option>
+        <option value="decreasing">decreasing</option>
+        
+      </select>
+      <div id="product-list">
+        <!-- products will be displayed here -->
+      </div>
+
+<br>
+<h1>To search for filtered category</h1>
+<br>
+
+      <label for="cars">Choose Category:</label>
+    <select name="cars" id="inp" onchange="filterCategory()">
+    <option value="none">none</option>
+    <option value="jewelery">jewelery</option>
+    <option value="men's clothing">men's clothing</option>
+    <option value="electronics">electronics</option>
+    <option value="women's clothing">women's clothing</option>
+    </select>
+      
+
+    <div id="products"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
